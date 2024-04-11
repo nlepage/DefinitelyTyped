@@ -225,14 +225,14 @@ export namespace Action {
          *
          * @param details
          */
-        setBadgeTextColor(details: SetBadgeTextColorDetailsType): void;
+        setBadgeTextColor(details: SetBadgeTextColorDetailsType): Promise<void>;
 
         /**
          * Gets the text color of the browser action badge.
          *
          * @param details
          */
-        getBadgeTextColor(details: Details): void;
+        getBadgeTextColor(details: Details): Promise<ColorArray>;
 
         /**
          * Enables the browser action for a tab. By default, browser actions are enabled.
